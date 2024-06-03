@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Struktur Hierarkis Vertebrata</title>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Fjalla One', sans-serif;
+  }
+  .tree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .tree ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .tree li {
+    margin: 0;
+    padding: 0 1em;
+    line-height: 2em;
+    color: #369;
+    font-weight: bold;
+    position: relative;
+  }
+  .tree li:before, .tree li:after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .tree li:before {
+    top: -0.5em;
+    bottom: 1em;
+    width: 1em;
+    border-left: 2px solid #999;
+  }
+  .tree li:after {
+    top: 1em;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #999;
+    border-radius: 0 0 0 0px;
+  }
+  .tree > ul > li:before {
+    top: 1em;
+  }
+  .tree li ul:before {
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 2px solid #999;
+  }
+  .tree li ul {
+    margin-left: 1em;
+    padding-left: 1em;
+  }
+  .tree li ul li {
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    background-color: #ddf;
+  }
+</style>
+</head>
+<body>
+<div class="tree">
+  <ul>
+    <li>Vertebrata
+      <ul>
+        <li>Ikan
+          <ul>
+            <li>Ikan Nila</li>
+          </ul>
+        </li>
+        <li>Amfibi</li>
+        <li>Reptil</li>
+        <li>Burung</li>
+        <li>Mamalia
+          <ul>
+            <li>Kucing Sylvester</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

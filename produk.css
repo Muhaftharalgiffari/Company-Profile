@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #5A4FCF;;
+    font-size: 2.5em; 
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.products-section p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666; 
+}
+
+/* Products Section */
+.products-section {
+    margin-bottom: 50px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.product-card {
+    width: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.product-card p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.buy-button {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Services Section */
+.services-section {
+    margin-bottom: 50px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-card {
+    width: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.service-card i {
+    font-size: 2em;
+    color: #1d1e1f;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.2em;
+}
+
+.service-card p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.learn-more-button {
+    display: block;
+    background-color: #050505;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back-button {
+    display: block;
+    margin: -40px auto 110px 125px; /* Center button */
+    padding: 10px 20px;
+    background-color: #5A4FCF; /* Blue color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    width: 55px;
+}
+
+.back-button:hover {
+    background-color: #4741C8; /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,131 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern and readable font */
+    line-height: 1.6;
+    color: #333;
+    padding: 10px;
+    background-color: #fff; /* Light background */
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #5A4FCF;
+    font-size: 2.5em; /* Larger font size for heading */
+    margin: 0;
+    padding: 20px;
+}
+
+.about-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-section h1 {
+    text-align: center;
+    color: #5A4FCF;
+    padding: 20px;
+    font-size: 2em;
+    border-bottom: 2px solid #5A4FCF;
+}
+
+.about-section p {
+    text-align: justify;
+    padding: 10px 0;
+    line-height: 1.6;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.about-section img {
+    display: block;
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    margin: 20px auto; /* Center image horizontally */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.about-section img:hover {
+    transform: scale(1.05);
+}
+
+.back-button {
+    display: block;
+    margin: 10px; /* Center button */
+    padding: 10px 20px;
+    background-color: #5A4FCF; /* Blue color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    width: fit-content;
+}
+
+.back-button:hover {
+    background-color: #4741C8; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em; /* Smaller font size for small screens */
+        padding: 10px;
+    }
+
+    .about-section {
+        padding: 15px;
+    }
+
+    .about-section h1 {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    .about-section p {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 2em; /* Medium font size for tablets */
+        padding: 15px;
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section h1 {
+        font-size: 1.75em;
+        padding: 20px;
+    }
+
+    .about-section p {
+        font-size: 1.1em;
+        padding: 10px 0;
+    }
+}

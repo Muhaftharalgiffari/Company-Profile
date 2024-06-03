@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background */
+}
+
+header {
+    background-color: #333; /* Primary color */
+    color: #fff; /* White text */
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 50px 0;
+    min-height: calc(100vh - 100px); /* Minimum height based on viewport height */
+    margin-bottom: 50px; /* Ensure footer has enough space below */
+}
+
+
+h2 {
+    color: #333; /* Dark gray heading */
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Wrap photos into rows */
+    justify-content: space-around; /* Distribute photos evenly */
+    margin-bottom: 40px;
+}
+
+.photo-item {
+    width: 300px; /* Adjust width as needed */
+    margin: 20px;
+    text-align: center;
+    background-color: #fff; /* White background for photos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    cursor: pointer; /* Enable hover effect */
+}
+
+.photo-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px;
+}
+
+.photo-item p {
+    color: #333; /* Dark gray text */
+    font-weight: bold;
+}
+
+/* Hover Effect for Photo Items */
+.photo-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+    display: block;
+    margin: 30px auto 50px 100px; /* Center button */
+    padding: 10px 20px;
+    background-color: #5A4FCF; /* Blue color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    width: 55px;
+}
+
+.back-button:hover {
+    background-color: #4741C8; /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0; /* Position at absolute bottom */
+    width: 100%; /* Span full width */
+}
+
+footer p {
+    margin: 0;
+}
